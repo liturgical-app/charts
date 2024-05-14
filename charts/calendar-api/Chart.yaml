@@ -1,0 +1,34 @@
+apiVersion: v2
+name: calendar-api
+description: The Liturgical Calendar API
+
+# A chart can be either an 'application' or a 'library' chart.
+type: application
+
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+# Versions are expected to follow Semantic Versioning (https://semver.org/)
+version: 0.1.0
+
+# This is the version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application. Versions are not expected to
+# follow Semantic Versioning. They should reflect the version the application is using.
+# It is recommended to use it with quotes.
+appVersion: "0.0.2"
+
+keywords:
+  - calendar
+  - api
+  - liturgical
+
+home: https://github.com/liturgical-app/charts
+sources:
+  - https://github.com/liturgical-app/calendar-api
+  - https://ghcr.io/liturgical-app/calendar-api
+maintainers:
+  - name: djjudas21
+    email: djjudas21@users.noreply.github.com
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: Initial chart release
