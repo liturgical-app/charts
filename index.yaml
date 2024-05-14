@@ -1,0 +1,29 @@
+apiVersion: v1
+entries:
+  calendar-api:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial chart release
+    apiVersion: v2
+    appVersion: 0.0.2
+    created: "2024-05-14T16:45:17.728425382Z"
+    description: The Liturgical Calendar API
+    digest: 9974600a801df0e3c0068a0066e2fc74997e96db6c4b76bbd9eae513be4cfa23
+    home: https://github.com/liturgical-app/charts
+    keywords:
+    - calendar
+    - api
+    - liturgical
+    maintainers:
+    - email: djjudas21@users.noreply.github.com
+      name: djjudas21
+    name: calendar-api
+    sources:
+    - https://github.com/liturgical-app/calendar-api
+    - https://ghcr.io/liturgical-app/calendar-api
+    type: application
+    urls:
+    - https://github.com/liturgical-app/charts/releases/download/calendar-api-0.1.0/calendar-api-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-05-14T16:45:17.728436323Z"
