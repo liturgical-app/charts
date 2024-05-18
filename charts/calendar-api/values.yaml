@@ -78,11 +78,11 @@ resources: {}
 
 livenessProbe:
   httpGet:
-    path: /
+    path: /today
     port: http
 readinessProbe:
   httpGet:
-    path: /
+    path: /today
     port: http
 
 # Additional volumes on the output Deployment definition.
