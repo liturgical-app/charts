@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "calendar-api.fullname" . }}
+  name: {{ include "liturgical-api.fullname" . }}
   labels:
-    {{- include "calendar-api.labels" . | nindent 4 }}
+    {{- include "liturgical-api.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "calendar-api.selectorLabels" . | nindent 4 }}
+    {{- include "liturgical-api.selectorLabels" . | nindent 4 }}

@@ -1,5 +1,5 @@
 apiVersion: v2
-name: calendar-api
+name: liturgical-api
 description: The Liturgical Calendar API
 
 # A chart can be either an 'application' or a 'library' chart.
@@ -23,12 +23,12 @@ keywords:
 
 home: https://github.com/liturgical-app/charts
 sources:
-  - https://github.com/liturgical-app/calendar-api
-  - https://ghcr.io/liturgical-app/calendar-api
+  - https://github.com/liturgical-app/liturgical-api
+  - https://ghcr.io/liturgical-app/liturgical-api
 maintainers:
   - name: djjudas21
     email: djjudas21@users.noreply.github.com
 annotations:
   artifacthub.io/changes: |-
     - kind: added
-      description: Update to calendar-api 0.0.9
+      description: Update to liturgical-api 0.0.9

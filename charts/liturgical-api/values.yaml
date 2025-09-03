@@ -1,11 +1,11 @@
-# Default values for calendar-api.
+# Default values for liturgical-api.
 
 # -- Number of replicas
 replicaCount: 1
 
 image:
   # -- image repository
-  repository: ghcr.io/liturgical-app/calendar-api
+  repository: ghcr.io/liturgical-app/liturgical-api
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag

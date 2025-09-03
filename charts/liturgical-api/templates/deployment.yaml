@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "calendar-api.fullname" . }}
+  name: {{ include "liturgical-api.fullname" . }}
   labels:
-    {{- include "calendar-api.labels" . | nindent 4 }}
+    {{- include "liturgical-api.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      {{- include "calendar-api.selectorLabels" . | nindent 6 }}
+      {{- include "liturgical-api.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -16,7 +16,7 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "calendar-api.labels" . | nindent 8 }}
+        {{- include "liturgical-api.labels" . | nindent 8 }}
         {{- with .Values.podLabels }}
         {{- toYaml . | nindent 8 }}
         {{- end }}
@@ -25,7 +25,7 @@ spec:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "calendar-api.serviceAccountName" . }}
+      serviceAccountName: {{ include "liturgical-api.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:

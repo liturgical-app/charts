@@ -1,4 +1,4 @@
-# calendar-api
+# liturgical-api
 
 ![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.2](https://img.shields.io/badge/AppVersion-0.0.2-informational?style=flat-square)
 
@@ -14,8 +14,8 @@ The Liturgical Calendar API
 
 ## Source Code
 
-* <https://github.com/liturgical-app/calendar-api>
-* <https://ghcr.io/liturgical-app/calendar-api>
+* <https://github.com/liturgical-app/liturgical-api>
+* <https://ghcr.io/liturgical-app/liturgical-api>
 
 ## Values
 
@@ -24,7 +24,7 @@ The Liturgical Calendar API
 | affinity | object | `{}` |  |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/liturgical-app/calendar-api"` | image repository |
+| image.repository | string | `"ghcr.io/liturgical-app/liturgical-api"` | image repository |
 | image.tag | string | chart.appVersion | image tag |
 | imagePullSecrets | list | `[]` |  |
 | ingress | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
