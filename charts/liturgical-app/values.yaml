@@ -8,7 +8,7 @@ liturgicalApiUrl: "https://api.liturgical.uk"
 
 image:
   # -- image repository
-  repository: ghcr.io/liturgical-app/liturgical-api
+  repository: ghcr.io/liturgical-app/liturgical-app
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
