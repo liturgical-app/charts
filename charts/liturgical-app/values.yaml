@@ -3,6 +3,9 @@
 # -- Number of replicas
 replicaCount: 1
 
+# -- URL of a Liturgical API
+liturgicalApiUrl: "https://api.liturgical.uk"
+
 image:
   # -- image repository
   repository: ghcr.io/liturgical-app/liturgical-api
