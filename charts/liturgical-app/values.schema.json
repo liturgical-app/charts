@@ -28,7 +28,7 @@
           "type": "string"
         },
         "repository": {
-          "default": "liturgical-app/liturgical-app",
+          "default": "ghcr.io/liturgical-app/liturgical-app",
           "description": "image repository",
           "required": [],
           "title": "repository",
@@ -137,6 +137,13 @@
       "required": [],
       "title": "ingress",
       "type": "object"
+    },
+    "liturgicalApiUrl": {
+      "default": "https://api.liturgical.uk",
+      "description": "URL of a Liturgical API",
+      "required": [],
+      "title": "liturgicalApiUrl",
+      "type": "string"
     },
     "nameOverride": {
       "default": "",
