@@ -1,6 +1,6 @@
 apiVersion: v2
 name: liturgical-api
-description: The Liturgical Calendar API
+description: An API server to return liturgical dates and colours for the Church of England
 
 # A chart can be either an 'application' or a 'library' chart.
 type: application
@@ -8,27 +8,29 @@ type: application
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 0.1.5
+version: 0.1.6
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 appVersion: "0.0.9"
-
 keywords:
-  - calendar
-  - api
   - liturgical
-
-home: https://github.com/liturgical-app/charts
+  - calendar
+  - church
+  - anglican
+  - api
+home: https://api.liturgical.uk
+icon: https://img.icons8.com/emoji/96/latin-cross-emoji.png
 sources:
   - https://github.com/liturgical-app/liturgical-api
   - https://ghcr.io/liturgical-app/liturgical-api
+  - https://github.com/liturgical-app/charts/tree/master/charts/liturgical-api
 maintainers:
   - name: djjudas21
     email: djjudas21@users.noreply.github.com
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
+    - kind: changed
       description: Update to liturgical-api 0.0.9

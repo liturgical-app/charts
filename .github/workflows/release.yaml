@@ -13,7 +13,7 @@ jobs:
       pages: write
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Fetch history
         run: git fetch --prune --unshallow
@@ -28,14 +28,10 @@ jobs:
         with:
           version: v3.14.1
 
-      - name: Add dependency chart repos
-        run: |
-          helm repo add bitnami https://charts.bitnami.com/bitnami
-          helm repo add bjw-s https://bjw-s-labs.github.io/helm-charts/
       - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1.5.0
+        uses: helm/chart-releaser-action@v1.7.0
         with:
           charts_dir: charts
-          config: cr.yaml
+          skip-existing: true
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
