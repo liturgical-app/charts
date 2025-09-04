@@ -3,19 +3,7 @@ remote: origin
 target-branch: main
 chart-dirs:
   - charts
-chart-repos:
-  - bitnami=https://charts.bitnami.com/bitnami
-  - bjw-s=http://bjw-s.github.io/helm-charts/
-  - truecharts-library=https://library-charts.truecharts.org/
+chart-repos: []
 helm-extra-args: --timeout 600s
-excluded-charts:
-  - graphite-exporter
-  - maian-music
-  - owncloud
-  - smtp-relay
-  - dbdump
-  - autonodelabel
-  - openssh-server
-  - connectbox-exporter
-  - liturgical-calendar
-  - lldap
+excluded-charts: []
+
