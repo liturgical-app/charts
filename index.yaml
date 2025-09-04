@@ -214,6 +214,35 @@ entries:
           description: Update to liturgical-app 1.0.0
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-09-04T21:26:49.225093895Z"
+    description: A web app to display liturgical dates and colours for the Church
+      of England
+    digest: 1ae7bfdcd809e6aedf6053214a18c98a2b65f82328edf1b5c5a03cacdffccc4a
+    home: https://liturgical.uk
+    icon: https://img.icons8.com/emoji/96/latin-cross-emoji.png
+    keywords:
+    - liturgical
+    - calendar
+    - church
+    - anglican
+    maintainers:
+    - email: djjudas21@users.noreply.github.com
+      name: djjudas21
+    name: liturgical-app
+    sources:
+    - https://github.com/liturgical-app/liturgical-app
+    - https://ghcr.io/liturgical-app/liturgical-app
+    - https://github.com/liturgical-app/charts/tree/master/charts/liturgical-app
+    type: application
+    urls:
+    - https://github.com/liturgical-app/charts/releases/download/liturgical-app-0.8.1/liturgical-app-0.8.1.tgz
+    version: 0.8.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update to liturgical-app 1.0.0
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-09-04T20:55:51.805757164Z"
     description: A web app to display liturgical dates and colours for the Church
       of England
@@ -237,4 +266,4 @@ entries:
     urls:
     - https://github.com/liturgical-app/charts/releases/download/liturgical-app-0.8.0/liturgical-app-0.8.0.tgz
     version: 0.8.0
-generated: "2025-09-04T20:55:51.805775388Z"
+generated: "2025-09-04T21:26:49.225119773Z"
