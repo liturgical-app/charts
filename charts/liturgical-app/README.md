@@ -1,10 +1,10 @@
 # liturgical-app
 
-![Version: 0.7.2](https://img.shields.io/badge/Version-0.7.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.7.2](https://img.shields.io/badge/AppVersion-0.7.2-informational?style=flat-square)
+![Version: 0.8.0](https://img.shields.io/badge/Version-0.8.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
 
-A simple app to display the current liturgical colour of the Church of England
+A web app to display liturgical dates and colours for the Church of England
 
-**Homepage:** <https://github.com/djjudas21/charts/tree/master/charts/liturgical-app>
+**Homepage:** <https://liturgical.uk>
 
 ## Maintainers
 
@@ -15,7 +15,8 @@ A simple app to display the current liturgical colour of the Church of England
 ## Source Code
 
 * <https://github.com/liturgical-app/liturgical-app>
-* <https://hub.docker.com/r/liturgical-app/liturgical-app>
+* <https://ghcr.io/liturgical-app/liturgical-app>
+* <https://github.com/liturgical-app/charts/tree/master/charts/liturgical-app>
 
 ## Values
 
@@ -24,10 +25,11 @@ A simple app to display the current liturgical colour of the Church of England
 | affinity | object | `{}` |  |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"liturgical-app/liturgical-app"` | image repository |
+| image.repository | string | `"ghcr.io/liturgical-app/liturgical-api"` | image repository |
 | image.tag | string | chart.appVersion | image tag |
 | imagePullSecrets | list | `[]` |  |
 | ingress | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
+| liturgicalApiUrl | string | `"https://api.liturgical.uk"` | URL of a Liturgical API |
 | nameOverride | string | `""` |  |
 | nodeSelector | object | `{}` |  |
 | podAnnotations | object | `{}` |  |
