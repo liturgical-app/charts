@@ -28,7 +28,7 @@
           "type": "string"
         },
         "repository": {
-          "default": "ghcr.io/liturgical-app/liturgical-api",
+          "default": "ghcr.io/liturgical-app/liturgical-app",
           "description": "image repository",
           "required": [],
           "title": "repository",
