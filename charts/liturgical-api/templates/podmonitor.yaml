@@ -1,0 +1,15 @@
+{{- if .Values.podMonitor.enabled }}
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: {{ include "liturgical-api.fullname" . }}
+  labels:
+    {{- include "liturgical-api.labels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "liturgical-api.selectorLabels" . | nindent 6 }}
+  podMetricsEndpoints:
+  - port: http
+    interval: {{ .Values.podMonitor.interval }}
+{{- end }}

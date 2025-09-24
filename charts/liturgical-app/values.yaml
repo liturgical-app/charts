@@ -55,7 +55,14 @@ service:
 ingress:
   enabled: false
   className: ""
-  annotations: {}
+  annotations:
+    nginx.ingress.kubernetes.io/server-snippet: |
+      location /metrics {
+        deny all;
+      }
+      location /healthz {
+        deny all;
+      }
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
@@ -75,6 +82,12 @@ resources: {}
   # requests:
   #   cpu: 100m
   #   memory: 128Mi
+
+podMonitor:
+  # -- Enable Pod Monitor for Prometheus Operator
+  enabled: false
+  # -- Metrics scrape interval
+  interval: 60s
 
 nodeSelector: {}
 
