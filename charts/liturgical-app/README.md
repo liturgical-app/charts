@@ -1,6 +1,6 @@
 # liturgical-app
 
-![Version: 0.8.1](https://img.shields.io/badge/Version-0.8.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
+![Version: 0.9.0](https://img.shields.io/badge/Version-0.9.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2.0](https://img.shields.io/badge/AppVersion-1.2.0-informational?style=flat-square)
 
 A web app to display liturgical dates and colours for the Church of England
 
@@ -34,6 +34,8 @@ A web app to display liturgical dates and colours for the Church of England
 | nodeSelector | object | `{}` |  |
 | podAnnotations | object | `{}` |  |
 | podLabels | object | `{}` |  |
+| podMonitor.enabled | bool | `false` | Enable Pod Monitor for Prometheus Operator |
+| podMonitor.interval | string | `"60s"` | Metrics scrape interval |
 | podSecurityContext | object | `{}` |  |
 | replicaCount | int | `1` | Number of replicas |
 | resources | object | `{}` |  |

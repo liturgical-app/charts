@@ -1,6 +1,6 @@
 # liturgical-api
 
-![Version: 0.1.7](https://img.shields.io/badge/Version-0.1.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.10](https://img.shields.io/badge/AppVersion-0.0.10-informational?style=flat-square)
+![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.3](https://img.shields.io/badge/AppVersion-1.0.3-informational?style=flat-square)
 
 An API server to return liturgical dates and colours for the Church of England
 
@@ -29,14 +29,16 @@ An API server to return liturgical dates and colours for the Church of England
 | image.tag | string | chart.appVersion | image tag |
 | imagePullSecrets | list | `[]` |  |
 | ingress | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
-| livenessProbe.httpGet.path | string | `"/today"` |  |
+| livenessProbe.httpGet.path | string | `"/healthz"` |  |
 | livenessProbe.httpGet.port | string | `"http"` |  |
 | nameOverride | string | `""` |  |
 | nodeSelector | object | `{}` |  |
 | podAnnotations | object | `{}` |  |
 | podLabels | object | `{}` |  |
+| podMonitor.enabled | bool | `false` | Enable Pod Monitor for Prometheus Operator |
+| podMonitor.interval | string | `"60s"` | Metrics scrape interval |
 | podSecurityContext | object | `{}` |  |
-| readinessProbe.httpGet.path | string | `"/today"` |  |
+| readinessProbe.httpGet.path | string | `"/healthz"` |  |
 | readinessProbe.httpGet.port | string | `"http"` |  |
 | replicaCount | int | `1` | Number of replicas |
 | resources | object | `{}` |  |
