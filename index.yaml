@@ -155,6 +155,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update to liturgical-api 1.0.3
+    apiVersion: v2
+    appVersion: 1.0.3
+    created: "2025-10-01T15:40:13.088029799Z"
+    description: An API server to return liturgical dates and colours for the Church
+      of England
+    digest: d4748c1fd07e3f7ae4db200ae6ec7dae4e0ba801688d7a86d1c53c615c67a1fd
+    home: https://api.liturgical.uk
+    icon: https://img.icons8.com/emoji/96/latin-cross-emoji.png
+    keywords:
+    - liturgical
+    - calendar
+    - church
+    - anglican
+    - api
+    maintainers:
+    - email: djjudas21@users.noreply.github.com
+      name: djjudas21
+    name: liturgical-api
+    sources:
+    - https://github.com/liturgical-app/liturgical-api
+    - https://ghcr.io/liturgical-app/liturgical-api
+    - https://github.com/liturgical-app/charts/tree/master/charts/liturgical-api
+    type: application
+    urls:
+    - https://github.com/liturgical-app/charts/releases/download/liturgical-api-0.2.1/liturgical-api-0.2.1.tgz
+    version: 0.2.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update to liturgical-api 1.0.2
     apiVersion: v2
     appVersion: 1.0.2
@@ -355,4 +385,4 @@ entries:
     urls:
     - https://github.com/liturgical-app/charts/releases/download/liturgical-app-0.8.0/liturgical-app-0.8.0.tgz
     version: 0.8.0
-generated: "2025-09-24T15:25:09.607407737Z"
+generated: "2025-10-01T15:40:13.088068772Z"
